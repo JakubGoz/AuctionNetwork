@@ -1,6 +1,7 @@
 import classes from './AuthenticationPage.module.scss';
 import LoginComponent from './Components/LoginComponent/LoginComponent';
 import RegisterComponent from './Components/RegisterComponent/RegisterComponent';
+import PasswordResetComponent from './Components/PasswordResetComponent/PasswordResetComponent';
 import { useState } from 'react';
 
 function AuthenticationPage() {
@@ -11,6 +12,7 @@ function AuthenticationPage() {
     }
 
     return (
+        <div className={classes['auth-page-wrapper']}>
         <div className={classes['auth-container']}>
             {ShowedComponent === "Login" && (
                 <LoginComponent
@@ -23,10 +25,11 @@ function AuthenticationPage() {
                 />
             )}
             {ShowedComponent === "PasswordReset" && (
-                <LoginComponent
+                <PasswordResetComponent
                     changeShowedComponent={changeShowedComponent}
                 />
             )}
+        </div>
         </div>
     );
 }

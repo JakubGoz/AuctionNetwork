@@ -1,9 +1,14 @@
 ﻿using MediatR;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using AuctionNetworkBackend.Application.Requests.UserRequests.LoginUser;
 using AuctionNetworkBackend.Application.Requests.UserRequests.RegisterUser;
 using AuctionNetworkBackend.Application.Requests.UserRequests.VerifyLoginUser;
 using AuctionNetworkBackend.Application.Requests.UserRequests.VerifyRegisterUser;
+using AuctionNetworkBackend.Application.Requests.UserRequests.VerifyPasswordReset;
+using AuctionNetworkBackend.Application.Requests.UserRequests.PasswordReset;
+
 namespace AuctionNetworkBackend.Api.Controllers
 {
     [ApiController]
@@ -37,6 +42,15 @@ namespace AuctionNetworkBackend.Api.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> RegisterUser(RegisterUserRequest request)
         {
+            var validator = new RegisterUserRequestValidator();
+
+            var validationResult = validator.Validate(request);
+
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors[0].ErrorMessage);
+            }
+
             await _mediator.Send(request);
             return Ok();
         }
@@ -63,6 +77,44 @@ namespace AuctionNetworkBackend.Api.Controllers
         {
             var token = await _mediator.Send(request);
             return Ok(token);
+        }
+        /// <summary>
+        /// Checks token during resetting password.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        [HttpPost("verify-password-reset")]
+        public async Task<IActionResult> VerifyPasswordReset(VerifyPasswordResetRequest request)
+        {
+            await _mediator.Send(request);
+            return Ok();
+        }
+
+        /// <summary>
+        /// Resets password.
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        [HttpPost("password-reset")]
+        public async Task<IActionResult> PasswordReset(PasswordResetRequest request)
+        {
+            var validator = new PasswordResetRequestValidator();
+
+            var validationResult = validator.Validate(request);
+
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors[0].ErrorMessage);
+            }
+
+            await _mediator.Send(request);
+            return Ok();
+        }
+        [Authorize]
+        [HttpGet("is-logged-in")]
+        public IActionResult IsLoggedIn()
+        {
+            return Ok();
         }
     }
 }

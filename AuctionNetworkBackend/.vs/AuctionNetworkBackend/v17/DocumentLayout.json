@@ -3,24 +3,64 @@
   "WorkspaceRootPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|solutionrelative:auctionnetworkbackend.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\verifyregisteruser\\verifyregisteruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\verifyregisteruser\\verifyregisteruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.infrastructure\\services\\smtpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|solutionrelative:auctionnetworkbackend.infrastructure\\services\\smtpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\loginuser\\loginuserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\loginuser\\loginuserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|solutionrelative:auctionnetworkbackend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.infrastructure\\services\\smtpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|solutionrelative:auctionnetworkbackend.infrastructure\\services\\smtpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.infrastructure\\ef\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|solutionrelative:auctionnetworkbackend.infrastructure\\ef\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\verifypasswordreset\\verifypasswordresetrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\verifypasswordreset\\verifypasswordresetrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\verifypasswordreset\\verifypasswordresetrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\verifypasswordreset\\verifypasswordresetrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\passwordreset\\passwordresetrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\passwordreset\\passwordresetrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\passwordreset\\passwordresetrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\passwordreset\\passwordresetrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\passwordreset\\passwordresetrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\passwordreset\\passwordresetrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\verifyregisteruser\\verifyregisteruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\verifyregisteruser\\verifyregisteruserrequesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|solutionrelative:auctionnetworkbackend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.infrastructure\\ef\\extentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,18 +95,6 @@
       "RelativeMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|solutionrelative:auctionnetworkbackend.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36DB0F31-6BC7-48CA-94CE-EE43EE662222}|AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj|solutionrelative:auctionnetworkbackend.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\registeruser\\registeruserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.infrastructure\\ef\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|solutionrelative:auctionnetworkbackend.infrastructure\\ef\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.infrastructure\\ef\\contexts\\auctionnetworkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4040310-AD33-4BE3-977D-55C614F450C3}|AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj|solutionrelative:auctionnetworkbackend.infrastructure\\ef\\contexts\\auctionnetworkdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -93,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\requests\\userrequests\\loginuser\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\requests\\userrequests\\loginuser\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|solutionrelative:auctionnetworkbackend.application\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5D54673-D527-41AF-9C1C-32153E382B5D}|AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj|e:\\izynierka\\kuba\\auctionnetwork\\auctionnetworkbackend\\auctionnetworkbackend.application\\auctionnetworkbackend.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -214,37 +238,180 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VerifyRegisterUserRequestHandler.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAjwDEAAAA1AAAA",
+              "Title": "SmtpService.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:41:12.041Z",
+              "WhenOpened": "2024-12-17T21:21:14.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAwwHQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T15:47:55.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginUserRequestHandler.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:10:37.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterUserRequestHandler.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:15:20.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterUserRequest.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAowBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:12:32.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:30:16.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VerifyPasswordResetRequestHandler.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequestHandler.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequestHandler.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequestHandler.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequestHandler.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAzwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:34:19.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "VerificationTokenRepository.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBUAAAA7AAAA",
+              "Title": "VerifyPasswordResetRequest.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequest.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequest.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequest.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyPasswordReset\\VerifyPasswordResetRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:31:24.449Z",
+              "WhenOpened": "2024-12-19T12:34:09.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "RegisterUserRequestValidator.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestValidator.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestValidator.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestValidator.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:31:56.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PasswordResetRequestValidator.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestValidator.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestValidator.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestValidator.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestValidator.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:30:50.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PasswordResetRequestHandler.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestHandler.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestHandler.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestHandler.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequestHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:29:15.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PasswordResetRequest.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequest.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequest.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequest.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\PasswordReset\\PasswordResetRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:29:07.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:35:49.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Api\\Properties\\launchSettings.json",
@@ -257,7 +424,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
+              "Title": "VerificationTokenRepository.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\VerificationTokenRepository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBUAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:31:24.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VerifyRegisterUserRequestHandler.cs",
+              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
+              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
+              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
+              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequestHandler.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAjwDEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T20:41:12.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Extentions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Extentions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Extentions.cs",
@@ -270,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "20241218173428_users.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Migrations\\20241218173428_users.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Migrations\\20241218173428_users.cs",
@@ -283,20 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterUserRequestHandler.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequestHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:15:20.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\appsettings.json",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Api\\appsettings.json",
@@ -309,20 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginUserRequestHandler.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequestHandler.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAAADQAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:10:37.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "DbContextConfiguration.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Configuration\\DbContextConfiguration.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Configuration\\DbContextConfiguration.cs",
@@ -335,20 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SmtpService.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Infrastructure\\Services\\SmtpService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T21:21:14.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "IVerificationTokenRepository.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Repositories\\IVerificationTokenRepository.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Repositories\\IVerificationTokenRepository.cs",
@@ -361,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "VerifyRegisterUserRequest.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequest.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyRegisterUser\\VerifyRegisterUserRequest.cs",
@@ -374,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Api\\appsettings.Development.json",
@@ -387,46 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Api\\Controllers\\UserController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAzwCAAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T15:47:55.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RegisterUserRequest.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\RegisterUser\\RegisterUserRequest.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA/wBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:12:32.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Infrastructure\\EF\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBJwBgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:30:16.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "AuctionNetworkDbContext.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Contexts\\AuctionNetworkDbContext.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Contexts\\AuctionNetworkDbContext.cs",
@@ -439,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "20241218205026_users_login.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Migrations\\20241218205026_users_login.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Migrations\\20241218205026_users_login.cs",
@@ -452,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "VerificationToken.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\Entities\\VerificationToken.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Domain\\Entities\\VerificationToken.cs",
@@ -465,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Domain\\Entities\\User.cs",
@@ -478,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "VerifyLoginUserRequestHandler.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyLoginUser\\VerifyLoginUserRequestHandler.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyLoginUser\\VerifyLoginUserRequestHandler.cs",
@@ -491,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "VerifyLoginUserRequest.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyLoginUser\\VerifyLoginUserRequest.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyLoginUser\\VerifyLoginUserRequest.cs",
@@ -504,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "VerifyLoginUserDto.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyLoginUser\\VerifyLoginUserDto.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\VerifyLoginUser\\VerifyLoginUserDto.cs",
@@ -517,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "LoginUserRequest.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequest.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Requests\\UserRequests\\LoginUser\\LoginUserRequest.cs",
@@ -530,20 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
-              "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "AuctionNetworkBackend.Application\\Repositories\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T20:35:49.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "AuctionNetworkBackend.Application.csproj",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj",
@@ -556,33 +658,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "AuctionNetworkBackend.Api.csproj",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
               "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
               "RelativeToolTip": "AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
-              "ViewState": "AQIAAA8AAAAAAAAAAABBwB8AAAAjAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAABRwB8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-12-17T20:39:39.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "Extentions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Extentions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Extentions.cs",
               "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Extentions.cs",
               "RelativeToolTip": "AuctionNetworkBackend.Application\\Extentions.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBIAAABoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwBIAAABoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T21:10:46.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\Program.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Api\\Program.cs",
@@ -595,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "AuctionNetworkBackend.Infrastructure.csproj",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj",
@@ -608,20 +710,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "AuctionNetworkBackend.Domain.csproj",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
               "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
               "RelativeToolTip": "AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
-              "ViewState": "AQIAAAoAAAAAAAAAAABBwB4AAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAABRwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-12-17T21:11:43.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -634,20 +736,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Extensions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\Extensions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Shared\\Extensions.cs",
               "ToolTip": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\Extensions.cs",
               "RelativeToolTip": "AuctionNetworkBackend.Shared\\Extensions.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAIBQwAAAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAuwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T21:15:41.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\Middleware\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Shared\\Middleware\\ExceptionMiddleware.cs",
@@ -660,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "Extentions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\Options\\Extentions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Shared\\Options\\Extentions.cs",
@@ -673,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "UnauthorizedException.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\Exceptions\\UnauthorizedException.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Shared\\Exceptions\\UnauthorizedException.cs",
@@ -686,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "BadRequestException.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\Exceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Shared\\Exceptions\\BadRequestException.cs",
@@ -699,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Shared\\Exceptions\\NotFoundException.cs",
@@ -712,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "UserContextService.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Services\\UserContextService.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\Services\\UserContextService.cs",
@@ -725,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "JwtService.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\Services\\JwtService.cs",
@@ -738,7 +840,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "Extentions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Jwt\\Extentions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\Jwt\\Extentions.cs",
@@ -751,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "SmtpOptions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Options\\SmtpOptions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Options\\SmtpOptions.cs",
@@ -764,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "Extentions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\Extentions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\Extentions.cs",
@@ -777,7 +879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "PostgresOptions.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Options\\PostgresOptions.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Options\\PostgresOptions.cs",
@@ -790,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "AuthenticationsSettings.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\EF\\Options\\AuthenticationsSettings.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Infrastructure\\EF\\Options\\AuthenticationsSettings.cs",
@@ -803,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "UserRoles.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\Enums\\UserRoles.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Domain\\Enums\\UserRoles.cs",
@@ -816,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "Role.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\Entities\\Role.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Domain\\Entities\\Role.cs",
@@ -829,7 +931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "IUserContextService.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Services\\IUserContextService.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Services\\IUserContextService.cs",
@@ -842,7 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "ISmtpService.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Services\\ISmtpService.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Services\\ISmtpService.cs",
@@ -855,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Services\\IJwtService.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Services\\IJwtService.cs",
@@ -868,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "PagedResults.cs",
               "DocumentMoniker": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\Pagination\\PagedResults.cs",
               "RelativeDocumentMoniker": "AuctionNetworkBackend.Application\\Pagination\\PagedResults.cs",

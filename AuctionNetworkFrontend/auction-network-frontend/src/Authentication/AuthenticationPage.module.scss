@@ -8,12 +8,14 @@
     flex-direction: column;
     align-items: center;
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
+  .auth-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 
   .auth-header {
     color: #9900cc;
@@ -41,7 +43,7 @@
     border-radius: 0px;
     outline: none;
     font-size: 1rem;
-    color: #1b5e20;
+    color: #663399;
   }
 
   .auth-input:focus {
@@ -75,17 +77,18 @@
 
   .auth-secondary-btn,
   .auth-secondary-btn {
-    background-color: transparent;
-    color: #8f4fe2;
+    background-color: #8f4fe2;
+    color: white;
     border: none;
     cursor: pointer;
     font-size: 0.9rem;
-    text-decoration: underline;
+    width: 25%;
   }
 
   .auth-secondary-btn:hover,
   .auth-secondary-btn:hover {
-    color: #5d0fa1;
+    background-color: #5d0fa1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   }  
 
   .auth-error-message {

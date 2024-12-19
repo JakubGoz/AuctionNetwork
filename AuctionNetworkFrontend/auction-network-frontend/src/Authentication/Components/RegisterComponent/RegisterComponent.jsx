@@ -6,6 +6,9 @@ import { baseUrl } from '../../../Shared/Options/ApiOptions';
 function RegisterComponent(props) {
     const emailErrRef = useRef(null);
     const tokenErrRef = useRef(null);
+    const passwordErrRef = useRef(null);
+    const userNameErrRef = useRef(null);
+    const phoneErrRef = useRef(null);
 
     const [IsVerified, setIsVerified] = useState(false);
     const [emailState, setEmailState] = useState("");
@@ -51,11 +54,52 @@ function RegisterComponent(props) {
             email: emailState,
             token: e.target.token.value,
             password: e.target.password.value,
-            firstName: e.target.firstName.value,
-            lastName: e.target.lastName.value,
+            userName: e.target.userName.value,
             phoneNumber: e.target.phoneNumber.value,
             country: e.target.country.value,
             city: e.target.city.value,
+        }
+        // Regex for password validation (minimum 8 characters, one uppercase, one lowercase, one digit, one special character)
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
+        // Regex for phone number validation (simple international format)
+        const phoneRegex = /^\+?[1-9]\d{1,14}$/;
+
+        let hasErrors = false;
+
+        // Validate token
+        if (!data.token) {
+            tokenErrRef.current.innerHTML = "Token is required.";
+            hasErrors = true;
+        } else {
+            tokenErrRef.current.innerHTML = "";
+        }
+
+        // Validate password
+        if (!passwordRegex.test(data.password)) {
+            passwordErrRef.current.innerHTML = "Password must be at least 8 characters long, with at least one uppercase, one lowercase, one digit, and one special character.";
+            hasErrors = true;
+        } else {
+            passwordErrRef.current.innerHTML = "";
+        }
+
+        // Validate Username
+        if (!data.userName) {
+            userNameErrRef.current.innerHTML = "Username name is required.";
+            hasErrors = true;
+        } else {
+            userNameErrRef.current.innerHTML = "";
+        }
+
+        // Validate phone number
+        if (!phoneRegex.test(data.phoneNumber)) {
+            phoneErrRef.current.innerHTML = "Phone number is invalid. It should be in international format. For example +48123456789";
+            hasErrors = true;
+        } else {
+            phoneErrRef.current.innerHTML = "";
+        }
+
+        if (hasErrors) {
+            return;
         }
 
         try {
@@ -105,6 +149,7 @@ function RegisterComponent(props) {
                     </form>
                 </>
             )}
+
             {IsVerified && (
                 <>
                     <h2 className={authClasses['auth-header']}>Create account</h2>
@@ -116,19 +161,17 @@ function RegisterComponent(props) {
                         </div>
                         <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="password">Password</label>
-                            <input className={authClasses['auth-input']} type="text" id="password" name="password" placeholder="Enter password" />
-                        </div>
+                            <input className={authClasses['auth-input']} type="password" id="password" name="password" placeholder="Enter password" />
+                            <span ref={passwordErrRef} className={authClasses['auth-error-message']}></span>                        </div>
                         <div className={authClasses['auth-input-group']}>
-                            <label className={authClasses['auth-label']} htmlFor="firstName">First name</label>
-                            <input className={authClasses['auth-input']} type="text" id="firstName" name="firstName" placeholder="Enter first name" />
-                        </div>
-                        <div className={authClasses['auth-input-group']}>
-                            <label className={authClasses['auth-label']} htmlFor="lastName">Last name</label>
-                            <input className={authClasses['auth-input']} type="text" id="lastName" name="lastName" placeholder="Enter last name" />
+                            <label className={authClasses['auth-label']} htmlFor="userName">User name</label>
+                            <input className={authClasses['auth-input']} type="text" id="userName" name="userName" placeholder="Enter User name" />
+                            <span ref={UserNameErrRef} className={authClasses['auth-error-message']}></span>
                         </div>
                         <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="phoneNumber">Phone number</label>
-                            <input className={authClasses['auth-input']} type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" />
+                            <input className={authClasses['auth-input']} type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" />
+                            <span ref={phoneErrRef} className={authClasses['auth-error-message']}></span>
                         </div>
                         <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="country">Country</label>

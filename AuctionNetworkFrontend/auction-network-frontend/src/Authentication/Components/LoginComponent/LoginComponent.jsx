@@ -82,7 +82,7 @@ function LoginComponent(props) {
     };
 
     const handleResetPassword = (e) => {
-        props.changeShowedComponent("ResetPassword")
+        props.changeShowedComponent("PasswordReset")
     };
 
     return (

@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   height: 100%;
-  height: 100vh;
-  height: 100lvh;
-  background-color: #E0E0E0 !important;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* Zapewnia przewijanie na poziomie całej strony */
+}
+
+body {
+  background-color: #f0edfe !important;
   overflow: hidden;
 }
 

@@ -131,3 +131,4 @@ E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Api
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Api\obj\Debug\net8.0\ref\AuctionNetworkBackend.Api.dll
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Api\bin\Debug\net8.0\AuctionNetworkBackend.Infrastructure.dll
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Api\bin\Debug\net8.0\AuctionNetworkBackend.Infrastructure.pdb
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Api\obj\Debug\net8.0\AuctionNetworkBackend.Api.sourcelink.json
