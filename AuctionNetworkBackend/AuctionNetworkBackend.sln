@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionNetworkBackend.Api", "AuctionNetworkBackend.Api\AuctionNetworkBackend.Api.csproj", "{36DB0F31-6BC7-48CA-94CE-EE43EE662222}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionNetworkBackend.Domain", "AuctionNetworkBackend.Domain\AuctionNetworkBackend.Domain.csproj", "{CB217634-875C-4E3C-B44C-3E42606E900D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionNetworkBackend.Application", "AuctionNetworkBackend.Application\AuctionNetworkBackend.Application.csproj", "{D5D54673-D527-41AF-9C1C-32153E382B5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionNetworkBackend.Infrastructure", "AuctionNetworkBackend.Infrastructure\AuctionNetworkBackend.Infrastructure.csproj", "{A4040310-AD33-4BE3-977D-55C614F450C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionNetworkBackend.Shared", "AuctionNetworkBackend.Shared\AuctionNetworkBackend.Shared.csproj", "{BD686F7C-6EBC-4FE6-994E-96DF507AF239}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{E395BEFA-AAD0-4B82-83A4-BC4143A69580}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36DB0F31-6BC7-48CA-94CE-EE43EE662222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DB0F31-6BC7-48CA-94CE-EE43EE662222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DB0F31-6BC7-48CA-94CE-EE43EE662222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DB0F31-6BC7-48CA-94CE-EE43EE662222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB217634-875C-4E3C-B44C-3E42606E900D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB217634-875C-4E3C-B44C-3E42606E900D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB217634-875C-4E3C-B44C-3E42606E900D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB217634-875C-4E3C-B44C-3E42606E900D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D54673-D527-41AF-9C1C-32153E382B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D54673-D527-41AF-9C1C-32153E382B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D54673-D527-41AF-9C1C-32153E382B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D54673-D527-41AF-9C1C-32153E382B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4040310-AD33-4BE3-977D-55C614F450C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4040310-AD33-4BE3-977D-55C614F450C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4040310-AD33-4BE3-977D-55C614F450C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4040310-AD33-4BE3-977D-55C614F450C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD686F7C-6EBC-4FE6-994E-96DF507AF239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD686F7C-6EBC-4FE6-994E-96DF507AF239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD686F7C-6EBC-4FE6-994E-96DF507AF239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD686F7C-6EBC-4FE6-994E-96DF507AF239}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CCBDA4F-BC9A-4104-9200-AA94017241A6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\bin\Debug\net8.0\AuctionNetworkBackend.Shared.deps.json
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\bin\Debug\net8.0\AuctionNetworkBackend.Shared.runtimeconfig.json
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\bin\Debug\net8.0\AuctionNetworkBackend.Shared.dll
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\bin\Debug\net8.0\AuctionNetworkBackend.Shared.pdb
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.csproj.AssemblyReference.cache
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.AssemblyInfoInputs.cache
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.AssemblyInfo.cs
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.csproj.CoreCompileInputs.cache
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.dll
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\refint\AuctionNetworkBackend.Shared.dll
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.pdb
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\AuctionNetworkBackend.Shared.genruntimeconfig.cache
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Shared\obj\Debug\net8.0\ref\AuctionNetworkBackend.Shared.dll

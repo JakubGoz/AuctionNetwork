@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "auaSR90mZBde2dLvX2mbqc7CPGtvWtEK87sLpn4c30k=",
+  "Source": "AuctionNetworkBackend.Api",
+  "BasePath": "_content/AuctionNetworkBackend.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
