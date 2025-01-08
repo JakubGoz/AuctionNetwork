@@ -14,7 +14,8 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
     public class DbContextConfiguration : 
         IEntityTypeConfiguration<User>, 
         IEntityTypeConfiguration<Role>,
-        IEntityTypeConfiguration<VerificationToken>
+        IEntityTypeConfiguration<VerificationToken>,
+        IEntityTypeConfiguration<Category>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
@@ -33,6 +34,11 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
                 .HasData(GetRoles());
         }
         public void Configure(EntityTypeBuilder<VerificationToken> builder)
+        {
+            builder
+                .HasKey(x => x.Id);
+        }
+        public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder
                 .HasKey(x => x.Id);
@@ -56,5 +62,7 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
 
             return roles;
         }
+
+        
     }
 }

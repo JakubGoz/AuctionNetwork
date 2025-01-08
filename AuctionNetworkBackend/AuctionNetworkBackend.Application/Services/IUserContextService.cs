@@ -9,7 +9,7 @@ namespace AuctionNetworkBackend.Application.Services
 {
     public interface IUserContextService
     {
-        Guid? GetUserId();
+        long? GetUserId();
         ClaimsPrincipal User { get; }
     }
 }

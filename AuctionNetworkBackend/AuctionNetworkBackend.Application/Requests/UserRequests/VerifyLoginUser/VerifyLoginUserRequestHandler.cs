@@ -59,6 +59,8 @@ namespace AuctionNetworkBackend.Application.Requests.UserRequests.VerifyLoginUse
 
             var jwtToken = _jwtService.GetJwtToken(user);
 
+            Console.WriteLine("k");
+
             return new VerifyLoginUserDto()
             {
                 Token = jwtToken

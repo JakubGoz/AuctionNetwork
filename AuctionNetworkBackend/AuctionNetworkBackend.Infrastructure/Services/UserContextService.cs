@@ -21,7 +21,7 @@ namespace AuctionNetworkBackend.Infrastructure.Services
 
         public ClaimsPrincipal User => _httpContextAccessor.HttpContext?.User;
 
-        public Guid? GetUserId() =>
-            User is null ? null : (Guid?)Guid.Parse(User.FindFirst(c => c.Type == ClaimTypes.NameIdentifier).Value);
+        public long? GetUserId() =>
+            User is null ? null : (long?)long.Parse(User.FindFirst(c => c.Type == ClaimTypes.NameIdentifier).Value);
     }
 }

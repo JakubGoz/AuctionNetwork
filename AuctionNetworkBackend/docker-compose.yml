@@ -8,4 +8,4 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
-      - POSTGRES_DB=SocialNetwor
+      - POSTGRES_DB=AuctionNetwork

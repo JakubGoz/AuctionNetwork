@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AuctionNetworkBackend.Application.Requests.UserRequests.GetUserShortInfo
+{
+    public class GetUserShortInfoDto
+    {
+        public long UserId { get; set; }
+        public string UserName { get; set; }
+
+    }
+}

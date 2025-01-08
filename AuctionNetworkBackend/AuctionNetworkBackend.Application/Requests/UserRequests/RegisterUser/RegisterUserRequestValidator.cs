@@ -16,7 +16,7 @@ namespace AuctionNetworkBackend.Application.Requests.UserRequests.RegisterUser
                 .NotEmpty().WithMessage("Email is required.")
                 .EmailAddress().WithMessage("Email must be a valid email address.");
 
-            // LastName is required
+            // Username is required
             RuleFor(x => x.UserName)
                 .NotEmpty().WithMessage("Username is required.");
 

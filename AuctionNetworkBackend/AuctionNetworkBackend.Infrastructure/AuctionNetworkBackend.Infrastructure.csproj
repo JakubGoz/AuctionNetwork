@@ -33,8 +33,6 @@
     <ProjectReference Include="..\AuctionNetworkBackend.Shared\AuctionNetworkBackend.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="EF\Migrations\" />
-  </ItemGroup>
+  
 
 </Project>

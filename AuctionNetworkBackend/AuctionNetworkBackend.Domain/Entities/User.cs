@@ -24,5 +24,8 @@ namespace AuctionNetworkBackend.Domain.Entities
 
         public long RoleId { get; set; }
         public string PasswordHash { get; set; }
+
+
+        public List<Listing> Listings { get; set; }
     }
 }

@@ -31,5 +31,9 @@
     <ProjectReference Include="..\AuctionNetworkBackend.Domain\AuctionNetworkBackend.Domain.csproj" />
     <ProjectReference Include="..\AuctionNetworkBackend.Shared\AuctionNetworkBackend.Shared.csproj" />
   </ItemGroup>
+	<ItemGroup>
+		
+		<Folder Include="Pagination\" />
+	</ItemGroup>
 
 </Project>

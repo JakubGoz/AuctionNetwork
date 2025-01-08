@@ -15,7 +15,7 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Contexts
         public DbSet<Role> Roles { get; set; }
 
         public DbSet<VerificationToken> VerificationTokens { get; set; }
-
+        public DbSet<Category> Categories { get; set; }
         public AuctionNetworkDbContext(DbContextOptions<AuctionNetworkDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -25,6 +25,8 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Contexts
             modelBuilder.ApplyConfiguration<User>(configuration);
             modelBuilder.ApplyConfiguration<Role>(configuration);
             modelBuilder.ApplyConfiguration<VerificationToken>(configuration);
+            modelBuilder.ApplyConfiguration<Category>(configuration);
+
         }
 
     }

@@ -12,3 +12,4 @@ E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Dom
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.pdb
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.genruntimeconfig.cache
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\ref\AuctionNetworkBackend.Domain.dll
+E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.sourcelink.json
