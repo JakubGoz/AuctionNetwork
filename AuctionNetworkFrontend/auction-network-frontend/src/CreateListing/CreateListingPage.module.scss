@@ -1,0 +1,64 @@
+$purple-darkest: #29024f;
+$purple-dark: #663399;
+$purple-medium: #9900cc;
+$purple-light: #cc99ff;
+$light: #f0edfe;
+.container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: $light;
+    border: 1px solid $purple-light;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      color: $purple-dark;
+    }
+  
+    .formGroup {
+      margin-bottom: 15px;
+      text-align: center;
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: $purple-dark;
+      }
+  
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid $purple-darkest;
+        border-radius: 4px;
+        text-align: center;
+      }
+  
+      textarea {
+        height: 100px;
+      }
+    }
+  
+    .submitButton {
+      background-color: $purple-dark;
+      color: $light;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $purple-medium;
+      }
+  
+      &:active {
+        background-color: $purple-light;
+      }
+    }
+  }
+  

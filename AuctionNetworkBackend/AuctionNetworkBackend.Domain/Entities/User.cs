@@ -27,5 +27,7 @@ namespace AuctionNetworkBackend.Domain.Entities
 
 
         public List<Listing> Listings { get; set; }
+        public List<Bid> Bids { get; set; } // Lista ofert złożonych przez użytkownika
+        public List<UserReview> UserReviews { get; set; } // Lista recenzji użytkownika
     }
 }

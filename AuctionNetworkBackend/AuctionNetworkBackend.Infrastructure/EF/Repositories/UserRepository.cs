@@ -26,6 +26,7 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Repositories
         public async Task<User?> GetUserById(long id)
             => await _dbContext.Users
                 .Include(x => x.Role)
+                .Include(x => x.UserReviews)
                 .FirstOrDefaultAsync(x => x.Id == id);
 
         public async Task<List<User>> GetUsers(GetUsersRequest request)

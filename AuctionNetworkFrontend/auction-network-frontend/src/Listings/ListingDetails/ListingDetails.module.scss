@@ -1,0 +1,101 @@
+$purple-darkest: #29024f;
+$purple-dark: #663399;
+$purple-medium: #9900cc;
+$purple-light: #a15ae7;
+$light: #f0edfe;
+$gray-light: #f0f0f0;
+$white: #ffffff;
+$dark: #333;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: $gray-light;
+}
+
+.main {
+  display: flex;
+  gap: 1rem;
+}
+
+.topLeft, .topRight {
+  background-color: $white;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topLeft {
+  flex: 7;
+}
+
+.topRight {
+  flex: 3;
+  position: relative; /* Dodaj to */
+}
+
+.description {
+  position: bottom;
+  background-color: $white;
+  padding: 1rem;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviewsButton, .buyNowButton, .bidButton, .updateButton, .deleteButton, .otherListingsButton {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: $purple-dark;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.buyButtons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewsButton:hover, .buyNowButton:hover, .bidButton:hover, .updateButton:hover, .deleteButton:hover, .otherListingsButton:hover {
+  background-color: $purple-light;
+}
+
+.button-container {
+    position: center;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+.like-button,
+.dislike-button {
+  background-color: $purple-dark;
+  color: white;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+  background-color: $purple-darkest;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateContainer {
+  display: flex;
+  justify-content: space-between;
+}

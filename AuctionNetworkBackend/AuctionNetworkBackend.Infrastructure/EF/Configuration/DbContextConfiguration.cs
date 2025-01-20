@@ -11,20 +11,41 @@ using AuctionNetworkBackend.Domain.Enums;
 
 namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
 {
-    public class DbContextConfiguration : 
-        IEntityTypeConfiguration<User>, 
+    public class DbContextConfiguration :
+        IEntityTypeConfiguration<User>,
         IEntityTypeConfiguration<Role>,
         IEntityTypeConfiguration<VerificationToken>,
-        IEntityTypeConfiguration<Category>
+        IEntityTypeConfiguration<Category>,
+        IEntityTypeConfiguration<Listing>,
+        IEntityTypeConfiguration<Bid>,
+        IEntityTypeConfiguration<UserReview>,
+        IEntityTypeConfiguration<ListingReview>,
+        IEntityTypeConfiguration<ListingStatus>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder
-                .HasKey(x => x.Id);
+        .HasKey(x => x.Id);
+
             builder
                 .HasOne(x => x.Role)
                 .WithMany()
                 .HasForeignKey(x => x.RoleId);
+
+            builder.HasMany(u => u.Bids)
+                .WithOne(b => b.Buyer)
+                .HasForeignKey(b => b.BuyerId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasMany(u => u.Listings)
+                .WithOne(l => l.Seller)
+                .HasForeignKey(l => l.SellerId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasMany(u => u.UserReviews) // Recenzje wystawione przez użytkownika
+                .WithOne(ur => ur.Reviewer)
+                .HasForeignKey(ur => ur.ReviewerId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
         public void Configure(EntityTypeBuilder<Role> builder)
         {
@@ -33,16 +54,135 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
             builder
                 .HasData(GetRoles());
         }
+        public void Configure(EntityTypeBuilder<ListingStatus> builder)
+        {
+            builder
+                .HasKey(x => x.Id);
+            builder
+                .HasData(GetStatuses());
+        }
         public void Configure(EntityTypeBuilder<VerificationToken> builder)
         {
             builder
                 .HasKey(x => x.Id);
         }
+
+        public void Configure(EntityTypeBuilder<Listing> builder)
+        {
+            builder.HasKey(x => x.Id);
+
+            builder.Property(x => x.Title)
+                .IsRequired()
+                .HasMaxLength(255);
+
+            builder.Property(x => x.Description)
+                .HasMaxLength(2000);
+
+            builder.Property(x => x.Price)
+                .HasPrecision(18, 2);
+
+            builder.HasMany(l => l.Bids)
+                .WithOne(b => b.Listing)
+                .HasForeignKey(b => b.ListingId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(x => x.Seller)
+                .WithMany(u => u.Listings)
+                .HasForeignKey(x => x.SellerId);
+
+            builder.HasOne(x => x.Category)
+                .WithMany(c => c.Listings)
+                .HasForeignKey(x => x.CategoryId);
+
+            builder.HasMany(l => l.ListingReviews)
+                .WithOne(lr => lr.Listing)
+                .HasForeignKey(lr => lr.ListingId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(x => x.Status) // Relacja do ListingStatus
+                .WithMany() // Nie musimy definiować kolekcji po stronie ListingStatus, bo jest to relacja "1 do 1"
+                .HasForeignKey(x => x.ListingStatusId) // Klucz obcy
+                .OnDelete(DeleteBehavior.Restrict); // Określenie, co się stanie przy usunięciu ListingStatus
+        }
         public void Configure(EntityTypeBuilder<Category> builder)
         {
-            builder
-                .HasKey(x => x.Id);
+            builder.HasKey(x => x.Id);
+
+            builder.Property(x => x.Name)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.HasMany(c => c.Listings)
+                .WithOne(l => l.Category)
+                .HasForeignKey(l => l.CategoryId);
+
+
+            builder.HasData(GetCategories());
         }
+        public void Configure(EntityTypeBuilder<Bid> builder)
+        {
+            builder.HasKey(b => b.Id);
+
+            builder.Property(b => b.Price)
+                .IsRequired();
+
+            builder.Property(b => b.Date)
+                .IsRequired();
+
+            builder.HasOne(b => b.Listing)
+                .WithMany(l => l.Bids)
+                .HasForeignKey(b => b.ListingId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(b => b.Buyer)
+                .WithMany(u => u.Bids)
+                .HasForeignKey(b => b.BuyerId)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
+        public void Configure(EntityTypeBuilder<UserReview> builder)
+        {
+            builder.HasKey(ur => ur.Id);
+
+            builder.HasOne(ur => ur.Reviewer)
+                .WithMany()
+                .HasForeignKey(ur => ur.ReviewerId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(ur => ur.ReviewedUser)
+                .WithMany()
+                .HasForeignKey(ur => ur.ReviewedUserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Property(ur => ur.IsLike)
+                .IsRequired();
+        }
+        public void Configure(EntityTypeBuilder<ListingReview> builder)
+        {
+            builder.HasKey(lr => lr.Id);
+
+            builder.HasOne(lr => lr.Reviewer)
+                .WithMany()
+                .HasForeignKey(lr => lr.ReviewerId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(lr => lr.Listing)
+                .WithMany(l => l.ListingReviews)
+                .HasForeignKey(lr => lr.ListingId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Property(lr => lr.Rating)
+        .IsRequired()
+        .HasDefaultValue(1); // Domyślna wartość, jeśli nie zostanie podana
+
+
+            builder.Property(lr => lr.Description)
+                .HasMaxLength(500); // Opcjonalnie, ustalamy maksymalną długość
+
+        }
+
+
+
+
         private IEnumerable<Role> GetRoles()
         {
             var roles = new List<Role>
@@ -62,7 +202,51 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
 
             return roles;
         }
+        private IEnumerable<ListingStatus> GetStatuses()
+        {
+            var statuses = new List<ListingStatus>
+        {
+            new()
+            {
+                Id = (long)ListingStatuses.Active,
+                Name = "Active"
 
-        
+            },
+            new()
+            {
+                Id = (long)ListingStatuses.Sold,
+                Name = "Sold"
+            },
+            new()
+            {
+                Id = (long)ListingStatuses.Ended,
+                Name = "Ended"
+
+            }
+        };
+
+            return statuses;
+        }
+        private IEnumerable<Category> GetCategories()
+        {
+            return new List<Category>
+            {
+                new() { Id = 1, Name = "Electronics" },
+                new() { Id = 2, Name = "Fashion" },
+                new() { Id = 3, Name = "Home & Garden" },
+                new() { Id = 4, Name = "Sports & Outdoors" },
+                new() { Id = 5, Name = "Automotive" },
+                new() { Id = 6, Name = "Books & Media" },
+                new() { Id = 7, Name = "Toys & Games" },
+                new() { Id = 8, Name = "Health & Beauty" },
+                new() { Id = 9, Name = "Industrial & Office Supplies" },
+                new() { Id = 10, Name = "Music Instruments & Equipment" },
+                new() { Id = 11, Name = "Food & Beverages" },
+                new() { Id = 12, Name = "Hobbies & Crafts" }
+            };
+        }
+
+
+
     }
 }

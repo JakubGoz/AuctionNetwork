@@ -26,6 +26,9 @@ namespace AuctionNetworkBackend.Infrastructure.EF
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IVerificationTokenRepository, VerificationTokenRepository>();
+            services.AddScoped<IListingRepository, ListingRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+
             return services;
         }
     }

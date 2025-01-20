@@ -22,7 +22,202 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Bid", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("BuyerId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<long>("ListingId")
+                        .HasColumnType("bigint");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BuyerId");
+
+                    b.HasIndex("ListingId");
+
+                    b.ToTable("Bids");
+                });
+
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Category", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            Name = "Electronics"
+                        },
+                        new
+                        {
+                            Id = 2L,
+                            Name = "Fashion"
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            Name = "Home & Garden"
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            Name = "Sports & Outdoors"
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            Name = "Automotive"
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            Name = "Books & Media"
+                        },
+                        new
+                        {
+                            Id = 7L,
+                            Name = "Toys & Games"
+                        },
+                        new
+                        {
+                            Id = 8L,
+                            Name = "Health & Beauty"
+                        },
+                        new
+                        {
+                            Id = 9L,
+                            Name = "Industrial & Office Supplies"
+                        },
+                        new
+                        {
+                            Id = 10L,
+                            Name = "Music Instruments & Equipment"
+                        },
+                        new
+                        {
+                            Id = 11L,
+                            Name = "Food & Beverages"
+                        },
+                        new
+                        {
+                            Id = 12L,
+                            Name = "Hobbies & Crafts"
+                        });
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Listing", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<decimal?>("BuyNowPrice")
+                        .HasColumnType("numeric");
+
+                    b.Property<long>("CategoryId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("character varying(2000)");
+
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("IsAuction")
+                        .HasColumnType("boolean");
+
+                    b.Property<long>("ListingStatusId")
+                        .HasColumnType("bigint");
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("numeric(18,2)");
+
+                    b.Property<long>("SellerId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("ListingStatusId");
+
+                    b.HasIndex("SellerId");
+
+                    b.ToTable("Listings");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.ListingReview", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<long>("ListingId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Rating")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(1);
+
+                    b.Property<long>("ReviewerId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ListingId");
+
+                    b.HasIndex("ReviewerId");
+
+                    b.ToTable("ListingReviews");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.ListingStatus", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -36,7 +231,24 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("ListingsStatus");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            Name = "Active"
+                        },
+                        new
+                        {
+                            Id = 2L,
+                            Name = "Sold"
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            Name = "Ended"
+                        });
                 });
 
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Role", b =>
@@ -107,6 +319,37 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.UserReview", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<bool>("IsLike")
+                        .HasColumnType("boolean");
+
+                    b.Property<long>("ReviewedUserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("ReviewerId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReviewedUserId");
+
+                    b.HasIndex("ReviewerId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserReviews");
+                });
+
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.VerificationToken", b =>
                 {
                     b.Property<long>("Id")
@@ -134,6 +377,71 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                     b.ToTable("VerificationTokens");
                 });
 
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Bid", b =>
+                {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", "Buyer")
+                        .WithMany("Bids")
+                        .HasForeignKey("BuyerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.Listing", "Listing")
+                        .WithMany("Bids")
+                        .HasForeignKey("ListingId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Buyer");
+
+                    b.Navigation("Listing");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Listing", b =>
+                {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.Category", "Category")
+                        .WithMany("Listings")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.ListingStatus", "Status")
+                        .WithMany()
+                        .HasForeignKey("ListingStatusId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", "Seller")
+                        .WithMany("Listings")
+                        .HasForeignKey("SellerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Seller");
+
+                    b.Navigation("Status");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.ListingReview", b =>
+                {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.Listing", "Listing")
+                        .WithMany("ListingReviews")
+                        .HasForeignKey("ListingId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", "Reviewer")
+                        .WithMany()
+                        .HasForeignKey("ReviewerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Listing");
+
+                    b.Navigation("Reviewer");
+                });
+
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.User", b =>
                 {
                     b.HasOne("AuctionNetworkBackend.Domain.Entities.Role", "Role")
@@ -143,6 +451,50 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                         .IsRequired();
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.UserReview", b =>
+                {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", "ReviewedUser")
+                        .WithMany()
+                        .HasForeignKey("ReviewedUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", "Reviewer")
+                        .WithMany()
+                        .HasForeignKey("ReviewerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", null)
+                        .WithMany("UserReviews")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("ReviewedUser");
+
+                    b.Navigation("Reviewer");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Category", b =>
+                {
+                    b.Navigation("Listings");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Listing", b =>
+                {
+                    b.Navigation("Bids");
+
+                    b.Navigation("ListingReviews");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.User", b =>
+                {
+                    b.Navigation("Bids");
+
+                    b.Navigation("Listings");
+
+                    b.Navigation("UserReviews");
                 });
 #pragma warning restore 612, 618
         }

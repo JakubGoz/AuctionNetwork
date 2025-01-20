@@ -16,6 +16,7 @@ namespace AuctionNetworkBackend.Domain.Entities
         public DateTime StartDate { get; set; } // Data rozpoczęcia
         public DateTime? EndDate { get; set; } // Data zakończenia
         public ListingStatus Status { get; set; } // Status ogłoszenia
+        public long ListingStatusId { get; set; }
         public bool IsAuction { get; set; } // Czy to aukcja
 
         // Relacje
@@ -23,5 +24,7 @@ namespace AuctionNetworkBackend.Domain.Entities
         public User Seller { get; set; }
         public long CategoryId { get; set; }
         public Category Category { get; set; }
+        public List<Bid>? Bids { get; set; } // Oferty w przypadku aukcji (może być puste w przypadku sprzedaży)
+        public List<ListingReview>? ListingReviews { get; set; } // Lista recenzji ogłoszenia
     }
 }

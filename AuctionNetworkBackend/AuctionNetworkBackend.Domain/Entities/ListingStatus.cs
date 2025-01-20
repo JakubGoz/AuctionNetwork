@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace AuctionNetworkBackend.Domain.Entities
 {
-    public enum ListingStatus
+    public class ListingStatus
     {
-        Active,  // Ogłoszenie jest aktywne
-        Sold,    // Przedmiot został sprzedany
-        Ended    // Aukcja zakończona
+        public long Id { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Requests\ListingRequests\Nowy folder1\**" />
+    <Compile Remove="Requests\ListingRequests\Nowy folder2\**" />
+    <EmbeddedResource Remove="Requests\ListingRequests\Nowy folder1\**" />
+    <EmbeddedResource Remove="Requests\ListingRequests\Nowy folder2\**" />
+    <None Remove="Requests\ListingRequests\Nowy folder1\**" />
+    <None Remove="Requests\ListingRequests\Nowy folder2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />

@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function AuthenticationPage() {
     const [ShowedComponent, setShowedComponent] = useState("Login");
-
+    
     const changeShowedComponent = (componentName) => {
         setShowedComponent(componentName);
     }

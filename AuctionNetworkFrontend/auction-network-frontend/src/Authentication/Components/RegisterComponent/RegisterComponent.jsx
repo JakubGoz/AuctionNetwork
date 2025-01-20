@@ -39,13 +39,14 @@ function RegisterComponent(props) {
             await axios.post(`${baseUrl}/user/verify-register`, data);
             setEmailState(data.email);
             setIsVerified(true);
-          } catch (err) {
+        } catch (err) {
             // Display backend exeptions
             if (err.response && err.response.data) {
-              emailErrRef.current.innerHTML = err.response.data;
+                emailErrRef.current.innerHTML = err.response.data;
             }
-          }
+        }
     };
+
 
     const handleCreate = async (e) => {
         e.preventDefault();
@@ -59,6 +60,7 @@ function RegisterComponent(props) {
             country: e.target.country.value,
             city: e.target.city.value,
         }
+
         // Regex for password validation (minimum 8 characters, one uppercase, one lowercase, one digit, one special character)
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
         // Regex for phone number validation (simple international format)
@@ -82,9 +84,9 @@ function RegisterComponent(props) {
             passwordErrRef.current.innerHTML = "";
         }
 
-        // Validate Username
+        // Validate user name
         if (!data.userName) {
-            userNameErrRef.current.innerHTML = "Username name is required.";
+            userNameErrRef.current.innerHTML = "Username is required.";
             hasErrors = true;
         } else {
             userNameErrRef.current.innerHTML = "";
@@ -104,15 +106,23 @@ function RegisterComponent(props) {
 
         try {
             // Register new user
-            await axios.post(`${baseUrl}/user/register`, data);
+            await axios.post(`${baseUrl}/user/register`, data, {
+                headers: {
+                    //'Content-Type': 'multipart/form-data',
+                    'Content-Type': 'application/json',
+                },
+            });
             handleLogIn();
             alert("Account created. You can sign in now.");
-          } catch (err) {
+        } catch (err) {
             // Display backend exeptions
             if (err.response && err.response.data) {
-              tokenErrRef.current.innerHTML = err.response.data;
+                const errorMessage = typeof err.response.data === 'string'
+                    ? err.response.data
+                    : err.response.data.error || "Something went wrong.";
+                tokenErrRef.current.innerHTML = errorMessage;
             }
-          }
+        }
     };
 
     const handleCancel = (e) => {
@@ -149,37 +159,37 @@ function RegisterComponent(props) {
                     </form>
                 </>
             )}
-
             {IsVerified && (
                 <>
                     <h2 className={authClasses['auth-header']}>Create account</h2>
                     <form onSubmit={handleCreate} className={authClasses['auth-form']}>
-                            <div className={authClasses['auth-input-group']}>
+                        <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="token">We have sent a verification token to the provided email. Token will expire in 30 minutes.</label>
-                            <input className={authClasses['auth-input']} type="number" id="token" name="token" placeholder="Enter token" />
+                            <input className={authClasses['auth-input']} type="number" id="token" name="token" placeholder="Enter token" required/>
                             <span ref={tokenErrRef} className={authClasses['auth-error-message']}></span>
                         </div>
                         <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="password">Password</label>
-                            <input className={authClasses['auth-input']} type="password" id="password" name="password" placeholder="Enter password" />
-                            <span ref={passwordErrRef} className={authClasses['auth-error-message']}></span>                        </div>
+                            <input className={authClasses['auth-input']} type="password" id="password" name="password" placeholder="Enter password" required/>
+                            <span ref={passwordErrRef} className={authClasses['auth-error-message']}></span>
+                        </div>
                         <div className={authClasses['auth-input-group']}>
-                            <label className={authClasses['auth-label']} htmlFor="userName">User name</label>
-                            <input className={authClasses['auth-input']} type="text" id="userName" name="userName" placeholder="Enter User name" />
-                            <span ref={UserNameErrRef} className={authClasses['auth-error-message']}></span>
+                            <label className={authClasses['auth-label']} htmlFor="userName">Username</label>
+                            <input className={authClasses['auth-input']} type="text" id="userName" name="userName" placeholder="Enter username" maxLength={20} required/>
+                            <span ref={userNameErrRef} className={authClasses['auth-error-message']}></span>
                         </div>
                         <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="phoneNumber">Phone number</label>
-                            <input className={authClasses['auth-input']} type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" />
+                            <input className={authClasses['auth-input']} type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" maxLength={15} required/>
                             <span ref={phoneErrRef} className={authClasses['auth-error-message']}></span>
                         </div>
                         <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="country">Country</label>
-                            <input className={authClasses['auth-input']} type="text" id="country" name="country" placeholder="Enter country" />
+                            <input className={authClasses['auth-input']} type="text" id="country" name="country" placeholder="Enter country" maxLength={30} required/>
                         </div>
                         <div className={authClasses['auth-input-group']}>
                             <label className={authClasses['auth-label']} htmlFor="city">City</label>
-                            <input className={authClasses['auth-input']} type="text" id="city" name="city" placeholder="Enter city" />
+                            <input className={authClasses['auth-input']} type="text" id="city" name="city" placeholder="Enter city" maxLength={30} required/>
                         </div>
                         <div className='row justify-content-between'>
                             <div className='col-5'>
@@ -188,7 +198,7 @@ function RegisterComponent(props) {
                                 </button>
                             </div>
                             <div className='col-5'>
-                            <button type='submit' className={authClasses['auth-primary-btn']}>
+                                <button type='submit' className={authClasses['auth-primary-btn']}>
                                     Verify and Create
                                 </button>
                             </div>
@@ -198,6 +208,6 @@ function RegisterComponent(props) {
             )}
         </>
     );
-  }
+}
 
-  export default RegisterComponent;  
+export default RegisterComponent;  

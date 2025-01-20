@@ -1,0 +1,74 @@
+$purple-darkest: #29024f;
+$purple-dark: #663399;
+$purple-medium: #9900cc;
+$purple-light: #a15ae7;
+$light: #f0edfe;
+$list-item-width: 70rem;
+
+.listing-item {
+  padding: 1rem;
+  background-color: white;
+  width: $list-item-width;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  border-bottom: 1px solid $purple-darkest;
+}
+
+.left-container {
+  flex: 7;
+  padding: 1rem;
+  background-color: $light;
+}
+
+.right-container {
+  flex: 3;
+  padding: 1rem;
+  background-color: $purple-light;
+  position: relative;
+}
+
+.action-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: 15rem;
+  background-color: $purple-dark;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: $purple-darkest;
+}
+
+.button-container-right {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.like-button,
+.dislike-button {
+  background-color: $purple-dark;
+  color: white;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+  background-color: $purple-darkest;
+}

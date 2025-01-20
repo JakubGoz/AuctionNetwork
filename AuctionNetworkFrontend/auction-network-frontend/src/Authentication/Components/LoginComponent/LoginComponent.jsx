@@ -18,7 +18,6 @@ function LoginComponent(props) {
             password: e.target.password.value,
         };
 
-        // Check for valid email format
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (userData.email === "") {
@@ -31,7 +30,6 @@ function LoginComponent(props) {
             emailErrRef.current.innerHTML = "";
         }
 
-        // Check for empty password
         if (userData.password.length === 0) {
             passwordErrRef.current.innerHTML = "Password can not be empty.";
             return;
@@ -64,7 +62,8 @@ function LoginComponent(props) {
 
             const response = await axios.post(`${baseUrl}/user/verify-login`, data);
             localStorage.setItem("token", response.data.token);
-            alert("You are logged in");
+            localStorage.setItem("userId", response.data.userId);
+            window.location.reload();
 
           } catch (err) {
             if (err.response && err.response.data) {

@@ -16,6 +16,11 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Contexts
 
         public DbSet<VerificationToken> VerificationTokens { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Listing> Listings { get; set; }
+        public DbSet<UserReview> UserReviews { get; set; } 
+        public DbSet<ListingReview> ListingReviews { get; set; }
+        public DbSet<Bid> Bids { get; set; }
+        public DbSet<ListingStatus> ListingsStatus { get; set; }
         public AuctionNetworkDbContext(DbContextOptions<AuctionNetworkDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -26,7 +31,11 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Contexts
             modelBuilder.ApplyConfiguration<Role>(configuration);
             modelBuilder.ApplyConfiguration<VerificationToken>(configuration);
             modelBuilder.ApplyConfiguration<Category>(configuration);
-
+            modelBuilder.ApplyConfiguration<Listing>(configuration);
+            modelBuilder.ApplyConfiguration<Bid>(configuration);
+            modelBuilder.ApplyConfiguration<UserReview>(configuration);
+            modelBuilder.ApplyConfiguration<ListingReview>(configuration);
+            modelBuilder.ApplyConfiguration<ListingStatus>(configuration);
         }
 
     }

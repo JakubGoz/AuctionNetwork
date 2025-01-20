@@ -17,6 +17,7 @@ namespace AuctionNetworkBackend.Application
         {
             services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             services.AddScoped<IPasswordHasher<VerificationToken>, PasswordHasher<VerificationToken>>();
+
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
             return services;
