@@ -1,0 +1,49 @@
+$purple-darkest: #29024f;
+$purple-dark: #663399;
+$purple-medium: #9900cc;
+$purple-light: #a15ae7;
+$light: #f0edfe;
+
+.homeContainer {
+  text-align: center;
+  padding: 2rem;
+  background-color: $light;
+  color: $purple-darkest;
+}
+
+.header {
+  background-color: $purple-dark;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.aboutSection {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid $purple-darkest;
+  margin-bottom: 2rem;
+}
+
+.featuresSection {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.feature {
+  background-color: $purple-light;
+  padding: 1.5rem;
+  width: 30%;
+  min-width: 15rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: $purple-dark;
+  color: white;
+}
+

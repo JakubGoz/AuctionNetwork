@@ -1,8 +1,6 @@
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\bin\Debug\net8.0\AuctionNetworkBackend.Domain.deps.json
-E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\bin\Debug\net8.0\AuctionNetworkBackend.Domain.runtimeconfig.json
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\bin\Debug\net8.0\AuctionNetworkBackend.Domain.dll
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\bin\Debug\net8.0\AuctionNetworkBackend.Domain.pdb
-E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.csproj.AssemblyReference.cache
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.GeneratedMSBuildEditorConfig.editorconfig
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.AssemblyInfoInputs.cache
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.AssemblyInfo.cs
@@ -10,6 +8,17 @@ E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Dom
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.dll
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\refint\AuctionNetworkBackend.Domain.dll
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.pdb
-E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.genruntimeconfig.cache
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\ref\AuctionNetworkBackend.Domain.dll
 E:\izynierka\kuba\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.sourcelink.json
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\bin\Debug\net8.0\AuctionNetworkBackend.Domain.deps.json
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\bin\Debug\net8.0\AuctionNetworkBackend.Domain.dll
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\bin\Debug\net8.0\AuctionNetworkBackend.Domain.pdb
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.AssemblyInfoInputs.cache
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.AssemblyInfo.cs
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.csproj.CoreCompileInputs.cache
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.sourcelink.json
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.dll
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\refint\AuctionNetworkBackend.Domain.dll
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\AuctionNetworkBackend.Domain.pdb
+E:\izynierka\AuctionNetwork\AuctionNetworkBackend\AuctionNetworkBackend.Domain\obj\Debug\net8.0\ref\AuctionNetworkBackend.Domain.dll

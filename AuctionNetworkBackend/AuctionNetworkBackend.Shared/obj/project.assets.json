@@ -2823,11 +2823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
+      "projectUniqueName": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
       "projectName": "AuctionNetworkBackend.Shared",
-      "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
+      "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
       "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-      "outputPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\obj\\",
+      "outputPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",

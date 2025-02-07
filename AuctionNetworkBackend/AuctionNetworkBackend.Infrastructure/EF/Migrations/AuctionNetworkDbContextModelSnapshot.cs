@@ -142,6 +142,9 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                     b.Property<decimal?>("BuyNowPrice")
                         .HasColumnType("numeric");
 
+                    b.Property<long?>("BuyerId")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("CategoryId")
                         .HasColumnType("bigint");
 
@@ -159,6 +162,9 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                     b.Property<long>("ListingStatusId")
                         .HasColumnType("bigint");
 
+                    b.Property<long>("PhotoId")
+                        .HasColumnType("bigint");
+
                     b.Property<decimal>("Price")
                         .HasPrecision(18, 2)
                         .HasColumnType("numeric(18,2)");
@@ -174,13 +180,20 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("character varying(255)");
 
+                    b.Property<long?>("WinnerId")
+                        .HasColumnType("bigint");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("BuyerId");
 
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("ListingStatusId");
 
                     b.HasIndex("SellerId");
+
+                    b.HasIndex("WinnerId");
 
                     b.ToTable("Listings");
                 });
@@ -241,14 +254,151 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                         },
                         new
                         {
-                            Id = 2L,
+                            Id = 3L,
                             Name = "Sold"
                         },
                         new
                         {
-                            Id = 3L,
+                            Id = 2L,
                             Name = "Ended"
                         });
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Order", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTime?>("CompletedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<long>("ListingId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("PaymentId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("numeric(18,2)");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ListingId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Payment", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<long>("OrderId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("PaymentStatus")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<string>("StripePaymentIntentId")
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId")
+                        .IsUnique();
+
+                    b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Photo", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("ContentType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<byte[]>("Data")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.Property<long?>("ListingId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ListingId")
+                        .IsUnique();
+
+                    b.ToTable("Photos");
                 });
 
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Role", b =>
@@ -398,6 +548,11 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
 
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Listing", b =>
                 {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", "Buyer")
+                        .WithMany()
+                        .HasForeignKey("BuyerId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("AuctionNetworkBackend.Domain.Entities.Category", "Category")
                         .WithMany("Listings")
                         .HasForeignKey("CategoryId")
@@ -416,11 +571,20 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.User", "Winner")
+                        .WithMany()
+                        .HasForeignKey("WinnerId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Buyer");
+
                     b.Navigation("Category");
 
                     b.Navigation("Seller");
 
                     b.Navigation("Status");
+
+                    b.Navigation("Winner");
                 });
 
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.ListingReview", b =>
@@ -440,6 +604,37 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                     b.Navigation("Listing");
 
                     b.Navigation("Reviewer");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Order", b =>
+                {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.Listing", "Listing")
+                        .WithMany()
+                        .HasForeignKey("ListingId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Listing");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Payment", b =>
+                {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.Order", "Order")
+                        .WithOne("Payment")
+                        .HasForeignKey("AuctionNetworkBackend.Domain.Entities.Payment", "OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Photo", b =>
+                {
+                    b.HasOne("AuctionNetworkBackend.Domain.Entities.Listing", "Listing")
+                        .WithOne("Photo")
+                        .HasForeignKey("AuctionNetworkBackend.Domain.Entities.Photo", "ListingId");
+
+                    b.Navigation("Listing");
                 });
 
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.User", b =>
@@ -486,6 +681,15 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Migrations
                     b.Navigation("Bids");
 
                     b.Navigation("ListingReviews");
+
+                    b.Navigation("Photo")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.Order", b =>
+                {
+                    b.Navigation("Payment")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("AuctionNetworkBackend.Domain.Entities.User", b =>

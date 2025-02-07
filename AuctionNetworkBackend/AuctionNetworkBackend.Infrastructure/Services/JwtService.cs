@@ -17,13 +17,10 @@ namespace AuctionNetworkBackend.Infrastructure.Services
     public class JwtService : IJwtService
     {
         private readonly AuthenticationSettings _authenticationSettings;
-
         public JwtService(AuthenticationSettings authenticationSettings)
         {
             _authenticationSettings = authenticationSettings;
         }
-
-        ///<inheritdoc/>
         public string GetJwtToken(User user)
         {
             var claims = new List<Claim>()

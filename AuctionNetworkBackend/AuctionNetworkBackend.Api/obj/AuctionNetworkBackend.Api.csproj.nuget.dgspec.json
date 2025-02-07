@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj": {}
+    "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj": {}
   },
   "projects": {
-    "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj": {
+    "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
+        "projectUniqueName": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
         "projectName": "AuctionNetworkBackend.Api",
-        "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
+        "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\AuctionNetworkBackend.Api.csproj",
         "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-        "outputPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\obj\\",
+        "outputPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj": {
-                "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj"
+              "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj": {
+                "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj"
               }
             }
           }
@@ -50,26 +50,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[11.11.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.4.1, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -82,25 +62,9 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
-            "Microsoft.Extensions.Configuration.Abstractions": {
+            "Stripe.net": {
               "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Binder": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.11, )"
+              "version": "[47.3.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -130,14 +94,14 @@
         }
       }
     },
-    "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj": {
+    "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj",
+        "projectUniqueName": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj",
         "projectName": "AuctionNetworkBackend.Application",
-        "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj",
+        "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj",
         "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-        "outputPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\obj\\",
+        "outputPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,11 +119,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj": {
-                "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj"
+              "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj": {
+                "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj"
               },
-              "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj": {
-                "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj"
+              "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj": {
+                "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj"
               }
             }
           }
@@ -230,6 +194,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.3.0, )"
             }
           },
           "imports": [
@@ -252,14 +220,14 @@
         }
       }
     },
-    "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj": {
+    "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
+        "projectUniqueName": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
         "projectName": "AuctionNetworkBackend.Domain",
-        "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
+        "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\AuctionNetworkBackend.Domain.csproj",
         "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-        "outputPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\obj\\",
+        "outputPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -293,60 +261,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[11.11.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.4.1, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Binder": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[8.0.11, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.11, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -367,14 +281,14 @@
         }
       }
     },
-    "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj": {
+    "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj",
+        "projectUniqueName": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj",
         "projectName": "AuctionNetworkBackend.Infrastructure",
-        "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj",
+        "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\AuctionNetworkBackend.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-        "outputPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\obj\\",
+        "outputPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -392,11 +306,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj": {
-                "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj"
+              "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj": {
+                "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Application\\AuctionNetworkBackend.Application.csproj"
               },
-              "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj": {
-                "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj"
+              "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj": {
+                "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj"
               }
             }
           }
@@ -428,10 +342,6 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
-            "Microsoft.AspNetCore.Http.Abstractions": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -489,14 +399,14 @@
         }
       }
     },
-    "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj": {
+    "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
+        "projectUniqueName": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
         "projectName": "AuctionNetworkBackend.Shared",
-        "projectPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
+        "projectPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
         "packagesPath": "C:\\Users\\Kuba\\.nuget\\packages\\",
-        "outputPath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\obj\\",
+        "outputPath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kuba\\AppData\\Roaming\\NuGet\\NuGet.Config",

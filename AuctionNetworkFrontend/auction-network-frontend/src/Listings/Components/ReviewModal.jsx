@@ -35,10 +35,13 @@ const ReviewModal = ({ listingId, onClose }) => {
         `${baseUrl}/listing/${listingId}/review`,
         { listingId, rating, description },
         authorization(token)
+        
       );
 
       setIsSubmitting(false); // Zakończ wysyłanie
       onClose(); // Zamknij modal po sukcesie
+      window.location.reload();
+      alert('Review successfully added!');
     } catch (err) {
       setIsSubmitting(false); // Zakończ wysyłanie w przypadku błędu
       setError(err.response?.data?.message || 'Failed to submit review. Please try again.');

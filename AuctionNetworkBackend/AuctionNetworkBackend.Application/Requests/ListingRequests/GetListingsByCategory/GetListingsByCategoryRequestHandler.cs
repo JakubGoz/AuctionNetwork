@@ -34,7 +34,7 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.GetListings
                 ?? throw new NotFoundException("User was not found");
 
             var listings = await _listingRepository.GetListingsByCategoryId(request.CategoryId);
-            
+
             var pageSize = 6;
 
             var listingsDto = listings.Select(x => new GetListingsByCategoryDto
@@ -49,7 +49,10 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.GetListings
                 EndDate = x.EndDate,
                 ListingStatus = x.Status.Name,
                 IsAuction = x.IsAuction,
-                ListingReviewsCount = x.ListingReviews.Count,
+                ListingReviewsCount = x.ListingReviews.Any() ? x.ListingReviews.Count : 0,
+                ListingReviewsAvg = x.ListingReviews.Any()
+                        ? x.ListingReviews.Average(y => y.Rating)
+                        : 0,  // Jeśli brak recenzji, średnia to 0
                 IsLiked = x.ListingReviews.FirstOrDefault(y => y.ReviewerId == loggedUserId) is not null
 
             }).OrderByDescending(x => x.StartDate)

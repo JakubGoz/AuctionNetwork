@@ -20,7 +20,10 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
         IEntityTypeConfiguration<Bid>,
         IEntityTypeConfiguration<UserReview>,
         IEntityTypeConfiguration<ListingReview>,
-        IEntityTypeConfiguration<ListingStatus>
+        IEntityTypeConfiguration<ListingStatus>,
+        IEntityTypeConfiguration<Photo>,
+        IEntityTypeConfiguration<Order>, // Dodaj konfigurację dla Order
+        IEntityTypeConfiguration<Payment>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
@@ -42,10 +45,10 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
                 .HasForeignKey(l => l.SellerId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            builder.HasMany(u => u.UserReviews) // Recenzje wystawione przez użytkownika
+            builder.HasMany(u => u.UserReviews)
                 .WithOne(ur => ur.Reviewer)
                 .HasForeignKey(ur => ur.ReviewerId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
         }
         public void Configure(EntityTypeBuilder<Role> builder)
         {
@@ -84,6 +87,11 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
             builder.HasMany(l => l.Bids)
                 .WithOne(b => b.Listing)
                 .HasForeignKey(b => b.ListingId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasOne(x => x.Buyer)
+                .WithMany()
+                .HasForeignKey(x => x.BuyerId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(x => x.Seller)
@@ -97,13 +105,23 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
             builder.HasMany(l => l.ListingReviews)
                 .WithOne(lr => lr.Listing)
                 .HasForeignKey(lr => lr.ListingId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasOne(x => x.Status)
+                .WithMany()
+                .HasForeignKey(x => x.ListingStatusId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            builder.HasOne(x => x.Status) // Relacja do ListingStatus
-                .WithMany() // Nie musimy definiować kolekcji po stronie ListingStatus, bo jest to relacja "1 do 1"
-                .HasForeignKey(x => x.ListingStatusId) // Klucz obcy
-                .OnDelete(DeleteBehavior.Restrict); // Określenie, co się stanie przy usunięciu ListingStatus
+            builder.HasOne(x => x.Photo)
+                .WithOne()
+                .HasForeignKey<Listing>(x => x.PhotoId);
+
+            builder.HasOne(x => x.Winner)
+                .WithMany()
+                .HasForeignKey(x => x.WinnerId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
+
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.HasKey(x => x.Id);
@@ -171,17 +189,101 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Configuration
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Property(lr => lr.Rating)
-        .IsRequired()
-        .HasDefaultValue(1); // Domyślna wartość, jeśli nie zostanie podana
+                .IsRequired()
+                .HasDefaultValue(1); 
 
 
             builder.Property(lr => lr.Description)
                 .HasMaxLength(500); // Opcjonalnie, ustalamy maksymalną długość
 
         }
+        public void Configure(EntityTypeBuilder<Photo> builder)
+        {
+            builder
+                .HasKey(x => x.Id);
+            builder
+                .HasOne(x => x.Listing)
+                .WithOne(x => x.Photo)
+                .HasForeignKey<Photo>(x => x.ListingId);
+        }
 
+        public void Configure(EntityTypeBuilder<Order> builder)
+        {
+            builder.HasKey(o => o.Id); // Klucz główny
 
+            builder.Property(o => o.ProductName)
+                .IsRequired()
+                .HasMaxLength(255);
 
+            builder.Property(o => o.Price)
+                .IsRequired()
+                .HasPrecision(18, 2);
+
+            builder.Property(o => o.Status)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder.Property(o => o.CreatedAt)
+                .IsRequired();
+
+            builder.Property(o => o.FirstName)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(o => o.LastName)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(o => o.Country)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(o => o.City)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(o => o.Street)
+                .IsRequired()
+                .HasMaxLength(255);
+
+            builder.Property(o => o.PostalCode)
+                .IsRequired()
+                .HasMaxLength(20);
+
+            builder.Property(o => o.PhoneNumber)
+                .HasMaxLength(20);
+
+            builder.HasOne(o => o.Listing)
+                .WithMany() 
+                .HasForeignKey(o => o.ListingId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            
+            builder.HasOne(o => o.Payment)
+                .WithOne(p => p.Order)
+                .HasForeignKey<Payment>(p => p.OrderId)
+                .OnDelete(DeleteBehavior.Cascade);
+        }
+
+        public void Configure(EntityTypeBuilder<Payment> builder)
+        {
+            builder.HasKey(p => p.Id); // Klucz główny
+
+            builder.Property(p => p.PaymentStatus)
+                .IsRequired()
+                .HasMaxLength(50);
+            builder.Property(p => p.StripePaymentIntentId)
+                .IsRequired(false)
+                .HasMaxLength(255);
+            
+            builder.Property(p => p.CreatedAt)
+                .IsRequired();
+
+            builder.HasOne(p => p.Order) 
+                .WithOne(o => o.Payment)
+                .HasForeignKey<Payment>(p => p.OrderId)
+                .OnDelete(DeleteBehavior.Cascade); 
+        }
 
         private IEnumerable<Role> GetRoles()
         {

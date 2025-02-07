@@ -20,6 +20,8 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.GetListings
         public string ListingStatus { get; set; }
         public bool IsAuction { get; set; }
         public int ListingReviewsCount { get; set; }
+        public double ListingReviewsAvg { get; set; }
+
         public bool IsLiked { get; set; }
 
 

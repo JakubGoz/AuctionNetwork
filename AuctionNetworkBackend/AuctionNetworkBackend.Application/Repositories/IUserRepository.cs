@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using AuctionNetworkBackend.Domain.Entities;
 using AuctionNetworkBackend.Application.Requests.UserRequests.GetUsers;
-using AuctionNetworkBackend.Domain.Entities;
 
 
 namespace AuctionNetworkBackend.Application.Repositories

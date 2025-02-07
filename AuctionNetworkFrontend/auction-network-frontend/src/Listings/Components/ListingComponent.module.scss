@@ -6,32 +6,57 @@ $light: #f0edfe;
 $list-item-width: 70rem;
 
 .listing-item {
+  width: $list-item-width;
   padding: 1rem;
   background-color: white;
-  width: $list-item-width;
+  
   display: flex;
   gap: 1rem;
   position: relative;
   border-bottom: 1px solid $purple-darkest;
 }
 
+.image-container {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; // Kolor tła
+  height: flexed; // Wysokość kontenera na zdjęcie
+}
+
+.listing-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 .left-container {
-  flex: 7;
+  flex: 6; 
   padding: 1rem;
   background-color: $light;
+  display: flex; 
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .right-container {
-  flex: 3;
+  flex: 4;
   padding: 1rem;
   background-color: $purple-light;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .action-button {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
   width: 15rem;
   background-color: $purple-dark;
   color: white;
@@ -47,28 +72,34 @@ $list-item-width: 70rem;
 }
 
 .button-container-right {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
   display: flex;
   gap: 0.5rem;
-}
-
-.like-button,
-.dislike-button {
-  background-color: $purple-dark;
-  color: white;
-  border: none;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.like-button:hover,
-.dislike-button:hover {
-  background-color: $purple-darkest;
+.star-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $purple-dark;
+}
+
+.star-icon:hover {
+  color: $purple-darkest;
+}
+
+@media (max-width: 768px) {
+  .listing-item {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .image-container, .left-container, .right-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .right-container {
+    position: relative;
+    margin-top: 1rem;
+  }
 }

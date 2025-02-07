@@ -1,0 +1,37 @@
+// pagination.module.scss
+
+$purple-darkest: #29024f;
+$purple-dark: #663399;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination a {
+  background-color: $purple-dark;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+
+.pagination a:hover {
+  background-color: $purple-darkest;
+}
+
+.pagination .active a {
+  background-color: $purple-darkest;
+}
+
+.pagination .disabled a {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

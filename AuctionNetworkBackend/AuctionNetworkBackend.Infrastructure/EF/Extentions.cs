@@ -11,6 +11,7 @@ using AuctionNetworkBackend.Infrastructure.EF.Options;
 using AuctionNetworkBackend.Infrastructure.EF.Repositories;
 using AuctionNetworkBackend.Application.Repositories;
 using AuctionNetworkBackend.Shared.Options;
+using SocialNetworkBackend.Infrastructure.EF.Repositories;
 
 namespace AuctionNetworkBackend.Infrastructure.EF
 {
@@ -28,6 +29,14 @@ namespace AuctionNetworkBackend.Infrastructure.EF
             services.AddScoped<IVerificationTokenRepository, VerificationTokenRepository>();
             services.AddScoped<IListingRepository, ListingRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IPhotoRepository, PhotoRepository>();
+            services.AddScoped<IBidRepository, BidRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+
+
+
+
 
             return services;
         }

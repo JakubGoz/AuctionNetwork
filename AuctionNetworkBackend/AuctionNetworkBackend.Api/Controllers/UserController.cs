@@ -10,6 +10,7 @@ using AuctionNetworkBackend.Application.Requests.UserRequests.VerifyLoginUser;
 using AuctionNetworkBackend.Application.Requests.UserRequests.VerifyRegisterUser;
 using AuctionNetworkBackend.Application.Requests.UserRequests.VerifyPasswordReset;
 using AuctionNetworkBackend.Application.Requests.UserRequests.PasswordReset;
+using AuctionNetworkBackend.Application.Requests.UserRequests.ToggleLikeUser;
 
 namespace AuctionNetworkBackend.Api.Controllers
 {
@@ -98,13 +99,21 @@ namespace AuctionNetworkBackend.Api.Controllers
             var result = await _mediator.Send(new GetUserShortInfoRequest());
             return Ok(result);
         }
-
-        [HttpGet]
         [Authorize]
+        [HttpGet]
         public async Task<IActionResult> GetUsers([FromQuery] GetUsersRequest request)
         {
             var result = await _mediator.Send(request);
             return Ok(result);
         }
+        [HttpPut("{userId}/toggle-like/{thumbUp}")]
+        public async Task<IActionResult> ToggleUserLike([FromRoute] long userId, [FromRoute] bool thumbUp)
+        {
+            var request = new ToggleLikeUserRequest { UserId = userId, ThumbUp = thumbUp };
+
+            await _mediator.Send(request);
+            return Ok();
+        }
+        
     }
 }

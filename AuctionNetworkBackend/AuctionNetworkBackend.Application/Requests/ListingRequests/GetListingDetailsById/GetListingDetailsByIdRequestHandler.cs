@@ -37,6 +37,13 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.GetListingD
 
             var seller = await _userRepository.GetUserById(listing.SellerId);
 
+            var totalReviews = seller.UserReviews.Count;
+            var positiveReviews = seller.UserReviews.Count(review => review.IsLike);
+
+            double sellerApprovePercentage = totalReviews > 0
+                ? (double)positiveReviews / totalReviews * 100
+                : 0;
+
             var result = new GetListingDetailsByIdDto
             {
                 Id = listing.Id,
@@ -56,7 +63,9 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.GetListingD
                 CategoryName = listing.Category.Name,
                 Bids = listing.Bids,
                 ListingReviewsCount = listing.ListingReviews.Count,
-                SellerReviewsCount = seller.UserReviews.Count
+                SellerReviewsCount = totalReviews,
+                SellerApprovePercentage = sellerApprovePercentage,
+                WinnerId = listing.WinnerId
             };
             return result;
         }

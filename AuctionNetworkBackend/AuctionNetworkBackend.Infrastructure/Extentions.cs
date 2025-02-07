@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AuctionNetworkBackend.Application.Services;
+using AuctionNetworkBackend.Application.Repositories;
 using AuctionNetworkBackend.Infrastructure.EF;
 using AuctionNetworkBackend.Infrastructure.EF.Options;
+using AuctionNetworkBackend.Infrastructure.EF.Repositories;
 using AuctionNetworkBackend.Infrastructure.Jwt;
 using AuctionNetworkBackend.Infrastructure.Services;
 using AuctionNetworkBackend.Shared.Options;
+using Microsoft.Extensions.Hosting;
+
 
 namespace AuctionNetworkBackend.Infrastructure
 {
@@ -31,9 +30,17 @@ namespace AuctionNetworkBackend.Infrastructure
                         .AllowAnyOrigin();
                 });
             });
+
             services.AddScoped<IJwtService, JwtService>();
             services.AddScoped<ISmtpService, SmtpService>();
             services.AddScoped<IUserContextService, UserContextService>();
+            services.AddScoped<IListingRepository, ListingRepository>();
+            services.AddHostedService<AuctionBackgroundService>();
+
+
+            // Ustaw cykl życia ListingStatusBackgroundService na Scoped lub Transient
+            //services.AddScoped<ListingStatusBackgroundService>(); // Jeśli chcesz używać Scoped
+            //services.AddHostedService<ListingStatusBackgroundService>();
 
             return services;
         }

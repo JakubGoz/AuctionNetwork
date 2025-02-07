@@ -43,5 +43,7 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Repositories
             _dbContext.Users.Update(user);
             await _dbContext.SaveChangesAsync();
         }
+
+        
     }
 }

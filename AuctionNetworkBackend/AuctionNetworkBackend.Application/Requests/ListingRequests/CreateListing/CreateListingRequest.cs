@@ -17,5 +17,7 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.CreateListi
         public DateTime? EndDate { get; set; }
         public long CategoryId { get; set; }
         public bool IsAuction { get; set; }
+        public IFormFile? ListingPicture { get; set; }
+
     }
 }

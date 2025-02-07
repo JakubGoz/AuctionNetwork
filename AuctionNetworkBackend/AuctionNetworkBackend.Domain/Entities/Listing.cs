@@ -22,8 +22,14 @@ namespace AuctionNetworkBackend.Domain.Entities
         // Relacje
         public long SellerId { get; set; }
         public User Seller { get; set; }
+        public long? BuyerId { get; set; }
+        public User? Buyer { get; set; }
+        public long? WinnerId { get; set; } 
+        public User? Winner { get; set; } 
         public long CategoryId { get; set; }
         public Category Category { get; set; }
+        public long PhotoId { get; set; }
+        public Photo Photo { get; set; }
         public List<Bid>? Bids { get; set; } // Oferty w przypadku aukcji (może być puste w przypadku sprzedaży)
         public List<ListingReview>? ListingReviews { get; set; } // Lista recenzji ogłoszenia
     }

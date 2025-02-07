@@ -60,8 +60,31 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.CreateListi
                 CategoryId = request.CategoryId,
                 Seller = loggedUser
             };
+            if (request.ListingPicture != null)
+            {
+                using var memoryStream = new MemoryStream();
+                await request.ListingPicture.CopyToAsync(memoryStream);
+                var listingPicture = new Photo
+                {
+                    Data = memoryStream.ToArray(),
+                    ContentType = request.ListingPicture.ContentType
+                };
+
+                listing.Photo = listingPicture;
+                listing.PhotoId = listingPicture.Id;
+
+            }
 
             await _listingRepository.Create(listing);
+
+            if (loggedUser.Listings == null)
+            {
+                loggedUser.Listings = new List<Listing>();
+            }
+            loggedUser.Listings.Add(listing);
+
+            // Zaktualizowanie użytkownika w repozytorium
+            await _userRepository.Update(loggedUser);
         }
     }
 }

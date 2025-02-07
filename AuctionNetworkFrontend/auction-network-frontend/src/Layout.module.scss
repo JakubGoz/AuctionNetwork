@@ -1,0 +1,179 @@
+$purple-darkest: #29024f;
+$purple-dark: #663399;
+$purple-medium: #5800cc;
+$purple-light: #aa77fc;
+$light: #f0edfe;
+
+.container {
+  display: flex; // Zmiana z grid na flex dla prostszego layoutu
+  flex-direction: column; // Ustawienie nagłówka na górze
+  height: 100vh; // Wysokość pełnoekranowa
+  position: relative;
+}
+
+.header {
+  background-color: $purple-dark;
+  color: $light;
+  padding: 0px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 3px solid $purple-darkest;
+  position: sticky;
+  top: 0; // Nagłówek przyklejony do góry
+  z-index: 2;
+}
+
+.content {
+  flex: 1; // Zajmuje pozostałą przestrzeń
+  padding: 20px;
+  background-color: $light;
+  font-size: 18px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center; // Wyśrodkowanie poziome zawartości
+  align-items: flex-start; // Dostosowanie zawartości do góry
+  
+}
+
+.create-listing-button {
+  background-color: $purple-light;
+  color: $light;
+  border: 1px solid $purple-darkest;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $purple-darkest;
+  }
+
+  &:active {
+    background-color: $purple-darkest;
+  }
+}
+.dropdown {
+  position: relative; // Kontener dla absolutnie pozycjonowanego menu
+
+  .dropdown-button {
+    background-color: $purple-light;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: $light;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $purple-darkest;
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute; // Menu jest absolutnie pozycjonowane
+    top: 100%; // Wyświetla się poniżej przycisku
+    left: 0;
+    background-color: $light;
+    border: 1px solid $purple-darkest;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10; // Aby menu było na wierzchu
+    padding: 10px;
+    width: 200%;
+
+    .dropdown-item {
+      padding: 5px 10px;
+      color: $purple-darkest;
+      background-color: $light;
+      cursor: pointer;
+      border: 1px solid $purple-darkest;
+      text-align: left;
+      width: 100%;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $purple-dark;
+        color: $light;
+      }
+    }
+  }
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border-radius: 8px;
+  width: 200px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.filter-button {
+  color: white;
+  background: $purple-light;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid black; // Dodanie obramowania dla każdej kolumny
+
+}
+
+.filter {
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex; // Użycie siatki CSS
+  grid-template-columns: 1fr 1fr 1fr; // Trzy kolumny o równej szerokości
+  gap: 0; // Odstępy między kolumnami
+  padding: 0;
+  background-color: $light;
+  width: 100rem;
+}
+
+.filter-container label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: $light; /* Upewnij się, że kolor jest odpowiedni dla ciemnego tła */
+}
+
+.left,
+.center,
+.right {
+  color: white; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: $light; /* Upewnij się, że tło jest ciemne, by tekst był dobrze widoczny */
+  height: 10rem;
+
+}
+.filter-container input,
+.filter-container select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.filter-container label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.home-button {
+  background: none;
+  border: none;
+  color: $light;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $purple-light;
+  }
+}

@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { baseUrl, authorization } from '../Shared/Options/ApiOptions';
 import axios from 'axios';
+import { useParams, useNavigate } from 'react-router-dom';
 import classes from './CreateListingPage.module.scss';
 import Select from 'react-select';
 
 const CreateListingPage = () => {
+    const { listingId } = useParams(); 
+    const navigate = useNavigate();
+    const [isEditMode, setIsEditMode] = useState(false);
     const [categories, setCategories] = useState([]);
     const [listing, setListing] = useState({
         title: '',
@@ -13,15 +17,14 @@ const CreateListingPage = () => {
         buyNowPrice: 0,
         endDate: '',
         categoryId: 0,
-        isAuction: false
+        isAuction: false,
+        listingPicture: null,
     });
 
-    // Fetch categories from backend
     useEffect(() => {
         const fetchCategories = async () => {
             try {
                 const response = await axios.get(`${baseUrl}/category`, authorization(localStorage.getItem("token")));
-                console.log('API response:', response);
                 if (Array.isArray(response.data)) {
                     const options = response.data.map((category) => ({
                         value: category.id,
@@ -36,81 +39,102 @@ const CreateListingPage = () => {
             }
         };
 
-        fetchCategories();
-    }, []);
+        const fetchListing = async () => {
+            if (listingId) {
+                setIsEditMode(true);
+                try {
+                    const response = await axios.get(`${baseUrl}/listing/${listingId}`, authorization(localStorage.getItem("token")));
+                    setListing({
+                        title: response.data.title,
+                        description: response.data.description,
+                        price: response.data.price,
+                        buyNowPrice: response.data.buyNowPrice || 0,
+                        endDate: response.data.endDate ? new Date(response.data.endDate).toISOString().slice(0, 16) : '',
+                        categoryId: response.data.categoryId,
+                        isAuction: response.data.isAuction,
+                        listingPicture: null, // Nie pobieramy zdjęcia tutaj
+                    });
+                } catch (err) {
+                    console.error('Error fetching listing details:', err);
+                }
+            }
+        };
 
-    // Handle changes in the form fields
+        fetchCategories();
+        fetchListing();
+    }, [listingId]);
+
     const handleInputChange = (e) => {
         const { name, value, type, checked } = e.target;
         setListing((prev) => ({
             ...prev,
-            [name]: type === 'checkbox' ? checked : value
+            [name]: type === 'checkbox' ? checked : value,
         }));
     };
 
-    // Handle category change
     const handleCategoryChange = (selectedOption) => {
         setListing((prev) => ({
             ...prev,
-            categoryId: selectedOption.value
+            categoryId: selectedOption.value,
         }));
     };
 
-    // Handle form submission (create listing)
+    const handleImageChange = (e) => {
+        const file = e.target.files[0];
+        setListing((prev) => ({
+            ...prev,
+            listingPicture: file,
+        }));
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const token = localStorage.getItem("token");
-
         if (!token) {
-            alert("You must be logged in to create a listing.");
+            alert("You must be logged in.");
             return;
         }
-
-        // Validate if endDate is in the future
+    
         if (listing.endDate && new Date(listing.endDate) <= new Date()) {
             alert('End Date must be in the future!');
             return;
         }
-
+    
         try {
-            const headers = {
-                Authorization: `Bearer ${token}`,
-                "Content-Type": "application/json" // Ensure the content type is JSON
-            };
-
-            // Format endDate to the correct format if provided
-            let formattedEndDate = null;
-            if (listing.endDate) {
-                formattedEndDate = new Date(listing.endDate).toISOString(); // Convert to ISO string
+            
+            const formData = new FormData();
+            formData.append('title', listing.title);
+            formData.append('description', listing.description);
+            formData.append('price', listing.price);
+            formData.append('categoryId', listing.categoryId);
+            formData.append('isAuction', listing.isAuction);
+            if (listing.buyNowPrice) formData.append('buyNowPrice', listing.buyNowPrice);
+            if (listing.endDate) formData.append('endDate', new Date(listing.endDate).toISOString());
+            if (listing.listingPicture) formData.append('listingPicture', listing.listingPicture);
+            for (let [key, value] of formData.entries()) {
+                console.log(`${key}: ${value}`);
             }
+            console.log("Listing ID:", listingId);
 
-            // Construct the payload
-            const payload = {
-                title: listing.title,
-                description: listing.description,
-                price: listing.price,
-                categoryId: listing.categoryId,
-                isAuction: listing.isAuction,
-                buyNowPrice: listing.buyNowPrice || null, // Optional field
-                endDate: formattedEndDate // Correctly formatted date or null
-            };
-
-            // Send the request as JSON
-            await axios.post(`${baseUrl}/listing`, JSON.stringify(payload), { headers });
-
-            alert('Listing created successfully!');
+    
+            const headers = { Authorization: `Bearer ${token}`, "Content-Type": "multipart/form-data" };
+    
+            if (listingId) {
+                await axios.put(`${baseUrl}/listing/update-listing/${listingId}`, formData, { headers });
+                alert('Listing updated successfully!');
+            } else {
+                await axios.post(`${baseUrl}/listing`, formData, { headers });
+                alert('Listing created successfully!');
+            }
         } catch (err) {
             console.error('Error submitting listing:', err);
-            alert('Failed to create listing');
+            alert('Failed to submit listing');
         }
     };
-
-    // Get current date and time in ISO format for the min attribute
-    const currentDateTime = new Date().toISOString().slice(0, 16); // Format it as yyyy-MM-ddTHH:mm
-
+    
     return (
         <div className={classes.container}>
-            <h1>Create Listing</h1>
+            <h1>{isEditMode ? 'Update Listing' : 'Create Listing'}</h1>
             <form onSubmit={handleSubmit}>
                 <div className={classes.formGroup}>
                     <label>Title</label>
@@ -149,7 +173,7 @@ const CreateListingPage = () => {
                     <Select
                         options={categories}
                         onChange={handleCategoryChange}
-                        value={categories.find(cat => cat.value === listing.categoryId)}
+                        value={categories.find((cat) => cat.value === listing.categoryId)}
                         placeholder="Select a category"
                     />
                 </div>
@@ -183,15 +207,22 @@ const CreateListingPage = () => {
                                 name="endDate"
                                 value={listing.endDate}
                                 onChange={handleInputChange}
-                                min={currentDateTime} // Prevent selecting past dates and times
+                                min={new Date().toISOString().slice(0, 16)}
                             />
                         </div>
                     </>
                 )}
+                <div className={classes.formGroup}>
+                    <label>Photo</label>
+                    <input
+                        type="file"
+                        name="listingPicture"
+                        accept="listingPicture/*"
+                        onChange={handleImageChange}
+                    />
+                </div>
 
-                <button type="submit" className={classes.submitButton}>
-                    Create Listing
-                </button>
+                <button className={classes.submitButton} type="submit">{isEditMode ? 'Update Listing' : 'Create Listing'}</button>
             </form>
         </div>
     );

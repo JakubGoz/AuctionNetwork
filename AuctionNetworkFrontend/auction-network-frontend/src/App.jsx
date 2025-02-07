@@ -1,14 +1,12 @@
-// App.jsx
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import './App.module.scss';
 import Layout from "./Layout";
 import HomePage from "./Home/HomePage";
-import ChatPage from "./Chat/ChatPage";
-import UsersPage from "./Users/UsersPage";
 import CreateListingPage from "./CreateListing/CreateListingPage";
 import AuthenticationPage from "./Authentication/AuthenticationPage";
 import ListingsPage from "./Listings/ListingsPage"; // Import nowego komponentu
 import ListingDetails from "./Listings/ListingDetails/ListingDetails";
+import OrderPaymentPage from './OrderPayment/OrderPaymentPage'; // Import nowej strony
 import './App.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect } from "react";
@@ -59,19 +57,21 @@ function App() {
             path="/home"
             element={isAuthenticated ? <HomePage /> : <Navigate to="/home" replace />}
           />
-          <Route
-            path="/chat"
-            element={isAuthenticated ? <ChatPage /> : <Navigate to="/auth" replace />}
-          />
-          <Route
-            path="/users"
-            element={isAuthenticated ? <UsersPage /> : <Navigate to="/auth" replace />}
-          />
+        
           <Route
             path="/CreateListing"
             element={isAuthenticated ? <CreateListingPage /> : <Navigate to="/auth" replace />}
           />
-          {/* Dodajemy nową trasę do kategorii */}
+          <Route 
+            path="/create-listing/:listingId" 
+            element={isAuthenticated ? <CreateListingPage /> : <Navigate to="/auth" replace />} 
+          />
+          
+          <Route
+            path="/order-payment/:listingId"
+            element={isAuthenticated ? <OrderPaymentPage /> : <Navigate to="/auth" replace />}
+          />
+          
           <Route
             path="/categories/:categoryId"
             element={isAuthenticated ? <ListingsPage /> : <Navigate to="/auth" replace />}
@@ -80,10 +80,29 @@ function App() {
             path="/listing/:id"
             element={isAuthenticated ? <ListingDetails /> : <Navigate to="/auth" replace />}
           />
+          <Route 
+            path="/listing/user/:userId" 
+            element={isAuthenticated ? <ListingsPage /> : <Navigate to="/auth" replace />} 
+          />
+          <Route 
+            path="/listing/purchases" 
+            element={isAuthenticated ? <ListingsPage /> : <Navigate to="/auth" replace />} 
+          />
+          <Route 
+            path="/listing/sales" 
+            element={isAuthenticated ? <ListingsPage /> : <Navigate to="/auth" replace />} 
+          />
+          <Route 
+            path="/bid/myitems" 
+            element={isAuthenticated ? <ListingsPage /> : <Navigate to="/auth" replace />} 
+          />
+          <Route
+            path="/listing/results"
+            element={isAuthenticated ? <ListingsPage /> : <Navigate to="/auth" replace />}
+          />
         </Route>
 
         <Route path="/auth" element={!isAuthenticated ? <AuthenticationPage /> : <Navigate to="/" replace />} />
-
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

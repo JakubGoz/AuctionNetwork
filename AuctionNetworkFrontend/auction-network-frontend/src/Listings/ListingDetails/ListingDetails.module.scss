@@ -13,6 +13,7 @@ $dark: #333;
   gap: 1rem;
   padding: 1rem;
   background-color: $gray-light;
+  width: 80rem;
 }
 
 .main {
@@ -20,26 +21,41 @@ $dark: #333;
   gap: 1rem;
 }
 
-.topLeft, .topRight {
+.imageContainer {
+  flex: 3;
+  background-color: $white;
+  padding: 0.5rem; // Zmniejszenie paddingu, aby kontener był mniejszy
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px; 
+  height: auto; 
+  margin: 0 auto; 
+}
+
+.imageContainer img {
+  max-width: 100%; // Zapewnia, że obrazek nie przekroczy szerokości kontenera
+  height: auto; // Zachowanie proporcji obrazu
+}
+
+.topLeft {
+  flex: 6;
   background-color: $white;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.topLeft {
-  flex: 7;
-}
-
 .topRight {
-  flex: 3;
-  position: relative; /* Dodaj to */
+  flex: 4;
+  background-color: $white;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .description {
-  position: bottom;
   background-color: $white;
   padding: 1rem;
-
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,7 +69,8 @@ $dark: #333;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.buyButtons{
+
+.buyButtons {
   display: flex;
   justify-content: space-between;
 }
@@ -63,14 +80,20 @@ $dark: #333;
 }
 
 .button-container {
-    position: center;
-    bottom: 1rem;
-    right: 1rem;
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center; // Wyrównanie pionowe
+  gap: 0.5rem; // Odstęp między elementami
 }
 
+.star-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $purple-dark;
+}
 
+.star-icon:hover {
+  color: $purple-darkest;
+}
 .like-button,
 .dislike-button {
   background-color: $purple-dark;
@@ -98,4 +121,58 @@ $dark: #333;
 .dateContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.bidInput,
+.bidButton {
+  height: 3rem; // Ustawienie tej samej wysokości dla wyrównania
+  margin: 0; // Usuń dodatkowy margines
+}
+
+.bidInput {
+  display: inline-block; 
+  border: 1px solid $purple-light;
+  width: 6rem; 
+  text-align: center;
+}
+
+.bidsButton {
+  background-color: $purple-dark;
+  color: $white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bidsButton:hover {
+  background-color: $purple-light;
+}
+
+.bidsModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  .bidsContainer {
+    border: 1px solid $purple-dark; // Obwódka
+    padding: 1rem;
+    margin-bottom: 1rem; // Odstęp od przycisku Close
+  }
+
+  ul {
+    list-style: none; // Usunięcie punktów listy
+    padding: 0;
+
+    li {
+      margin-bottom: 1rem; // Odstęp między bidami
+      border-bottom: 1px solid $gray-light; // Delikatna linia oddzielająca
+      padding-bottom: 0.5rem;
+    }
+  }
 }

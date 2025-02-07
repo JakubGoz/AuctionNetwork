@@ -27,6 +27,8 @@ namespace AuctionNetworkBackend.Application.Requests.ListingRequests.GetListingD
         public List<Bid>? Bids { get; set; }
         public int ListingReviewsCount { get; set; }
         public int SellerReviewsCount { get; set; }
+        public double SellerApprovePercentage { get; set; }
+        public long? WinnerId { get; set; }
 
     }
 }

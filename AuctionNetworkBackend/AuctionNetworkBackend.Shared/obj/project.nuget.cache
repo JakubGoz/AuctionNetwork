@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z/DhUqMN8Ak=",
+  "dgSpecHash": "GImZ+4u7nEQ=",
   "success": true,
-  "projectFilePath": "E:\\izynierka\\kuba\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
+  "projectFilePath": "E:\\izynierka\\AuctionNetwork\\AuctionNetworkBackend\\AuctionNetworkBackend.Shared\\AuctionNetworkBackend.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kuba\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\Kuba\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

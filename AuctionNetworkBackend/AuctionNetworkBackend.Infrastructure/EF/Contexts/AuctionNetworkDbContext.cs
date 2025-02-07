@@ -13,7 +13,6 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Contexts
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
-
         public DbSet<VerificationToken> VerificationTokens { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Listing> Listings { get; set; }
@@ -21,6 +20,11 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Contexts
         public DbSet<ListingReview> ListingReviews { get; set; }
         public DbSet<Bid> Bids { get; set; }
         public DbSet<ListingStatus> ListingsStatus { get; set; }
+        public DbSet<Photo> Photos { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+
+
         public AuctionNetworkDbContext(DbContextOptions<AuctionNetworkDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -36,6 +40,10 @@ namespace AuctionNetworkBackend.Infrastructure.EF.Contexts
             modelBuilder.ApplyConfiguration<UserReview>(configuration);
             modelBuilder.ApplyConfiguration<ListingReview>(configuration);
             modelBuilder.ApplyConfiguration<ListingStatus>(configuration);
+            modelBuilder.ApplyConfiguration<Photo>(configuration);
+            modelBuilder.ApplyConfiguration<Order>(configuration);
+            modelBuilder.ApplyConfiguration<Payment>(configuration);
+
         }
 
     }
